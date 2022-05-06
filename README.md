@@ -1,5 +1,5 @@
 # RTLSDR-Airband-Docker
-Docker image for [szpajder/RTLSDR-Airband](https://github.com/szpajder/RTLSDR-Airband).
+Docker image for [szpajder/RTLSDR-Airband](https://github.com/szpajder/RTLSDR-Airband). This image is also hosted on [Docker Hub](https://hub.docker.com/r/danr31/rtlsdr-airband).
 
 The sample configuration file is copied to /config when the container is run, and you will need to modify this file to suit your environment. See the [RTLSDR-Airband Wiki](https://github.com/szpajder/RTLSDR-Airband/wiki) for more info.
 
