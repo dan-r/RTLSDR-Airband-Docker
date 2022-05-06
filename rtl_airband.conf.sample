@@ -1,0 +1,31 @@
+fft_size = 512;
+devices: (
+  {
+    type = "rtlsdr";
+    index = 0;
+    gain = 25;
+    mode = "scan";
+    channels:
+    (
+      {
+        freqs = (111.1, 222.2, 333.3);
+        modulation = "am";
+        send_scan_freq_tags = true;
+        bandwidth = 6000;
+        outputs: (
+          {
+            type = "icecast";
+            server = "hostname";
+            port = 8000;
+            mountpoint = "TWR.mp3";
+            name = "Tower";
+            tls = "disabled";
+            genre = "ATC";
+            username = "source";
+            password = "source";
+          }
+        );
+      }
+    );
+  }
+);

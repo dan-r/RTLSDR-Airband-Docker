@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  rtlsdr-airband:
+    container_name: rtlsdr-airband
+    restart: unless-stopped
+    privileged: true
+    volumes:
+      - /opt/docker/rtlsdr-airband/config:/config
+    image: danr31/rtlsdr-airband:latest
