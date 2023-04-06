@@ -7,4 +7,4 @@ services:
     privileged: true
     volumes:
       - /opt/docker/rtlsdr-airband/config:/config
-    image: danr31/rtlsdr-airband:latest
+    image: ghcr.io/dan-r/rtlsdr-airband-docker:main
