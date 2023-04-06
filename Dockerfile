@@ -7,7 +7,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32 &&
 
 RUN mkdir /build
 WORKDIR /build
-RUN wget -O RTLSDR-Airband.tar.gz https://github.com/szpajder/RTLSDR-Airband/archive/v4.0.2.tar.gz
+RUN wget -O RTLSDR-Airband.tar.gz https://github.com/charlie-foxtrot/RTLSDR-Airband/archive/v4.0.3.tar.gz
 RUN tar xvfz RTLSDR-Airband.tar.gz --strip-components=1
 RUN mkdir build
 WORKDIR /build/build
