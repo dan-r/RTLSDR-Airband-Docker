@@ -1,8 +1,5 @@
 FROM ubuntu:jammy
-RUN apt-get update && apt-get install -y libmp3lame-dev libconfig++-dev libfftw3-dev librtlsdr-dev gnupg build-essential cmake pkg-config wget
-
-RUN bash -c "echo 'deb http://ports.ubuntu.com/ubuntu-ports/ bionic main' >> /etc/apt/sources.list"
-RUN apt-get update && apt-get install -y libshout3 libshout3-dev
+RUN apt-get update && apt-get install -y libmp3lame-dev libconfig++-dev libfftw3-dev librtlsdr-dev gnupg build-essential cmake pkg-config wget libshout3 libshout3-dev
 
 RUN mkdir /build
 WORKDIR /build
